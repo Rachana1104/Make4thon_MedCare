@@ -1,1 +1,1 @@
-web: gunicorn new_project.wsgi --log-file -
+web: gunicorn mychat.wsgi --log-file -
