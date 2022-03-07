@@ -14,7 +14,7 @@ const Quiz = () => {
 
   const handleAnswer = (score) => {
     if (score === 100) {
-      console.log(setScores);
+      console.log(scores);
       setScores(scores + score);
       console.log(scores);
     } else if (score === 60) {
@@ -27,6 +27,7 @@ const Quiz = () => {
       setScores(scores + 20);
       console.log(scores);
     }
+    sessionStorage.setItem('Score', scores);
     setClicked(true);
   };
 
